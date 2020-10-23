@@ -86,6 +86,7 @@ PARTIE HEADER
   width: 25px;
 }
 
+
 /* 
 //////////////////////////
 PARTIE SIDEBAR
@@ -107,6 +108,13 @@ PARTIE SIDEBAR
    padding-left: 10px;
    color: #fff;
  }
+
+ @media screen and (max-width: 1200px) {
+   .sidebar {
+     display: none;
+   }
+ }
+
 
  /* 
 //////////////////////////
@@ -176,4 +184,25 @@ PARTIE GAMES
   overflow: hidden;
   font-weight: 500;
   font-size: 18px;
+}
+@media screen and (max-width: 1200px) {
+  .titreGames {
+    padding-left: 0px;
+  }
+  .flexAcceuil {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .titreGames {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 559px) {
+  .flexAcceuil {
+    padding-left: 0px;
+  }
+  .carteGames {
+    margin: 0 0 30px 0;
+  }
 }
