@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from '../assets/IconeTwitch.svg'
-import croix from '../assets/Croix.svg'
-import menuIco from '../assets/MenuIco.svg'
-import search from '../assets/Search.svg'
+import logo from '../../assets/IconeTwitch.svg'
+import menuIco from '../../assets/MenuIco.svg'
+import search from '../../assets/Search.svg'
 
 function Header(){
 

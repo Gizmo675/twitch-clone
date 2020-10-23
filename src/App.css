@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +46,8 @@ PARTIE HEADER
 .liensNav {
   list-style-type: none;
   padding: 0 20px;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 0.1rem;
 }
 .liensNav:nth-child(4) {
   margin: 0 auto;
@@ -172,6 +176,7 @@ PARTIE GAMES
   font-weight: 300;
   padding-left: 260px;
   padding-bottom: 50px;
+  font-family: 'Staatliches', cursive;
 }
 .flexAcceuil {
   display: flex;
