@@ -89,6 +89,15 @@ PARTIE HEADER
 .menuIco {
   width: 25px;
 }
+.lien{
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.lien:hover {
+  color: white;
+  text-decoration: none;
+}
 
 
 /* 
@@ -291,6 +300,15 @@ PARTIE TOP STREAMS
  }
  .viewers {
    margin-bottom: 20px;
+ }
+ .textStream {
+   width: 80%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-weight: 500;
+   font-size: 18px;
+   opacity: 0.7;
  }
 
  @media screen and (max-width: 559px) {
