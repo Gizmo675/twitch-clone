@@ -85,6 +85,25 @@ PARTIE HEADER
 .menuIco {
   width: 25px;
 }
-.logo, .logoLoupe, .menuIco {
-  color: white;
-}
+
+/* 
+//////////////////////////
+PARTIE SIDEBAR
+//////////////////////////
+ */
+ .sidebar {
+   position: fixed;
+   top: 50px;
+   width: 239px;
+   background: grey;
+   height: 100vh;
+ }
+ .titreSidebar {
+   padding: 30px 0 20px 0;
+   font-size: 15px;
+   font-weight: 500;
+ }
+ .listeStream {
+   padding-left: 10px;
+   color: #fff;
+ }
