@@ -7,11 +7,12 @@ function Games() {
 
   useEffect(()=> {
     const fetchData = async () => {
+      // Je veux la liste des jeux les plus streamé
       const result = await api.get('https://api.twitch.tv/helix/games/top')
-      // console.log(result);
 
       let dataArray = result.data.data
       let finalArray = dataArray.map(game=>{
+        // Je modifie la largeur et hauteur
         let newUrl = game.box_art_url
         .replace('{width}', '250')
         .replace('{height}', '300')
