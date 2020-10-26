@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 // Component
 import Games from './components/Games/Games';
+import GameStreams from './components/GameStreams/gamestreams';
 import Header from './components/Header/Header';
 import Live from './components/Live/live';
 import Sidebar from './components/Sidebar/SideBar';
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/' component={Games} />
           <Route exact path='/top-streams' component={TopStreams} />
           <Route exact path='/live/:slug' component={Live} />
+          <Route exact path='/game/:slug' component={GameStreams} />
         </Switch>
       </div>
     </Router>

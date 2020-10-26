@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom'
 import api from '../../api'
 
 function Games() {
@@ -35,7 +36,14 @@ function Games() {
             <img src={game.box_art_url} alt="jeu profile pic" className="imgCarte"/>
             <div className="cardBodyGames">
               <h5 className="titreCartesGames">{game.name}</h5>
-              <div className="btnCarte">Regarder {game.name}</div>
+              <Link className='lien' to={{
+                pathname: 'game/' + game.name,
+                state: {
+                  gameID: game.id
+                }
+                }} >
+                <div className="btnCarte">Regarder {game.name}</div>
+              </Link>
             </div>
           </div>
         ))}

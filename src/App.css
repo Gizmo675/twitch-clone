@@ -93,6 +93,8 @@ PARTIE HEADER
   color: white;
   cursor: pointer;
   text-decoration: none;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 0.1rem;
 }
 .lien:hover {
   color: white;
