@@ -395,14 +395,6 @@ PARTIE LIVE
 PARTIE GAMESTREAMS
 //////////////////////////
  */
- .titreGameStream {
-   padding: 1.5em;
-   font-size: 53px;
-   font-weight: 300;
-   /* padding-left: 260px;
-   padding-bottom: 10px; */
-   color: red;
- }
  .sousTitreGameStreams {
    font-size: 25px;
    font-weight: 300;
