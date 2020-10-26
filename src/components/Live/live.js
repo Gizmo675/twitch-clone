@@ -31,7 +31,7 @@ function Live() {
 
     }
     fetchData()
-  })
+  }, [])
 
   return(
     <div className="containerDecale">
@@ -39,7 +39,7 @@ function Live() {
       <div className="contInfo">
         <div className="titreStream">{infoStream.title}</div>
         <div className="viewers">Viewers: {infoStream.viewer_count}</div>
-        <div className="infogame">Streamer: {infoStream.user_name}, &nbsp; Langue: {infoStream.language}</div>
+        <div className="infoGame">Streamer: {infoStream.user_name}, &nbsp; Langue: {infoStream.language}</div>
         <div className="nomJeu">Jeu: {infoGame}</div>
       </div>
     </div>
