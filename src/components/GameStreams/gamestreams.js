@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import {useLocation} from 'react-router-dom'
+import {useLocation, useParams, Link} from 'react-router-dom'
 import api from '../../api'
 
 function GameStreams() {
 
   let location = useLocation()
+  let {slug} = useParams()
 
   const [streamData, setStreamData] = useState([])
   const [viewers, setViewers] = useState(0)
@@ -59,12 +60,26 @@ function GameStreams() {
 
   return (
     <div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h1>je suis game streams</h1>
+      <h1 className="titreGamesStreams">stream : {slug}</h1>
+      <h3 className="sousTitreGameStreams">
+        <strong className='textColored'>{viewers}</strong> personnes regardent {slug}
+      </h3>
+      <div className="flexAcceuil">
+        {streamData.map((stream, index)=>(
+          <div key={index} className="carteGameStreams">
+            <img src={stream.thumbnail_url} alt="jeu carte img" className="imgCarte"/>
+            <div className="cardBodyGameStreams">
+              <h5 className="titreCartesStream">{stream.user_name}</h5>
+              <p className="txtStream">Nombre de viewers : {stream.viewer_count}</p>
+              <Link className='lien' to = {{
+                pathname: `/live/${stream.login}`
+              }} >
+                <div className="btnCarte">Regarder {stream.user_name}</div>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
