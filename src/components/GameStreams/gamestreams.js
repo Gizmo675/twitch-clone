@@ -60,9 +60,9 @@ function GameStreams() {
 
   return (
     <div>
-      <h1 className="titreGamesStreams">stream : {slug}</h1>
+      <h1 className="titreGameStreams">stream : {slug}</h1>
       <h3 className="sousTitreGameStreams">
-        <strong className='textColored'>{viewers}</strong> personnes regardent {slug}
+        <strong className='textColored'>10 000</strong> personnes regardent {slug}
       </h3>
       <div className="flexAcceuil">
         {streamData.map((stream, index)=>(

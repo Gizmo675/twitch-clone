@@ -389,3 +389,61 @@ PARTIE LIVE
     text-align: left;
   }
  }
+
+  /* 
+//////////////////////////
+PARTIE GAMESTREAMS
+//////////////////////////
+ */
+ .titreGameStream {
+   padding: 1.5em;
+   font-size: 53px;
+   font-weight: 300;
+   /* padding-left: 260px;
+   padding-bottom: 10px; */
+   color: red;
+ }
+ .sousTitreGameStreams {
+   font-size: 25px;
+   font-weight: 300;
+   padding-left: 260px;
+   padding-bottom: 50px;
+ }
+ .textColored {
+   color: #6441a4;
+ }
+ .carteGameStreams {
+   height: 380px;
+   width: 320px;
+   margin: 0 30px 30px 0;
+   transition: all 0.4s;
+   border-radius: 10px;
+   box-shadow: 2px 11px 36px -16px rgba(0, 0, 0, 0.75);
+ }
+ .carteGameStreams:hover {
+   transform: translateY(-5px);
+ }
+ .cardBodyGameStreams {
+   height: 200px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+ }
+ @media screen and (max-witdh:1200px) {
+   .titreGameStream {
+     padding-left: 0px;
+     font-size: 30px;
+   }
+   .sousTitreGameStreams {
+     padding-left: 0px;
+     padding-bottom: 50px;
+     font-size: 17px;
+   }
+ }
+
+ @media screen and (max-witdh:559px) {
+  .carteGameStreams {
+    margin: 0 0 30px 0;
+  }
+ }
