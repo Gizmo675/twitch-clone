@@ -13,7 +13,9 @@ import TopStreams from './components/Topstreams/Topstreams'
 
 function App() {
   return (
-    <Router>
+    <Router
+      forceRefresh={true}
+    >
       <div className="App">
         <Header />
         <Sidebar />

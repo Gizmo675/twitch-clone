@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import api from '../../api'
+import Erreur from '../Erreur/erreur'
 
 function Resultat() {
 
@@ -14,14 +15,21 @@ function Resultat() {
   useEffect(()=>{
     const fetchData = async ()=>{
       const result = await api.get(`https://api.twitch.tv/helix/users?login=${cleanSearch}`)
-      
-      setSteamerInfo(result.data.data)
+
+      if(result.data.data.length === 0) {
+        setResult(false)
+      } else {
+        setSteamerInfo(result.data.data)
+      }
 
     }
     fetchData()
   }, [])
 
   return (
+
+    result ? 
+
     <div>
       <div className="containerDecaleResultats">
         <h4>Resultats de recherche :</h4>
@@ -43,6 +51,9 @@ function Resultat() {
         ))}
       </div>
     </div>
+
+    :
+    <Erreur />
   )
 }
 
