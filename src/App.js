@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import './App.css';
+import Erreur from './components/Erreur/erreur';
 // Component
 import Games from './components/Games/Games';
 import GameStreams from './components/GameStreams/gamestreams';
@@ -26,6 +27,7 @@ function App() {
           <Route exact path='/live/:slug' component={Live} />
           <Route exact path='/game/:slug' component={GameStreams} />
           <Route exact path='/resultat/:slug' component={Resultat} />
+          <Route exact path='/resultat/' component={Erreur} />
         </Switch>
       </div>
     </Router>
