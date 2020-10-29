@@ -56,7 +56,7 @@ function GameStreams() {
       setStreamData(finalArray)
     }
     fetchData()
-  }, [])
+  }, [location])
 
   return (
     <div>

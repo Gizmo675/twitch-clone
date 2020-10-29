@@ -38,7 +38,7 @@ function Live() {
       }
     }
     fetchData()
-  }, [])
+  }, [slug])
 
   return(
 

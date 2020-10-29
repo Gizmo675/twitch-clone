@@ -24,7 +24,7 @@ function Resultat() {
 
     }
     fetchData()
-  }, [])
+  }, [cleanSearch])
 
   return (
 
